@@ -53,7 +53,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "topicCell", for: indexPath) as? TopicCell else {
             return UICollectionViewCell()
         }
-        
+        cell.layer.cornerRadius = 20
         return cell
     }
     
